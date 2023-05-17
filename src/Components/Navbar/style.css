@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-logo {
+    font-size:32px;
+    font-weight: bold;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+  
+  .navbar-link {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      }
+      .navbar-links{
+        display :flex;
+        flex-direction:column;
+        width: 100%;
+      
+      }
+      .navbar-link{
+        font-size: smaller;
+        width:100%;
+      }
+    }
