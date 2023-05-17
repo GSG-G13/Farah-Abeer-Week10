@@ -1,0 +1,65 @@
+/* style.css */
+.input-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+h1 {
+  margin-left: 20px;
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-family: cursive;
+}
+
+.input-box form {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  font-family: cursive;
+}
+
+.input-box input {
+  flex-grow: 1;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  font-family: cursive;
+  margin-top: 20px;
+}
+
+.input-box .icon {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.input-box .search-icon {
+  font-size: 20px;
+  color: #333;
+}
+
+.input-box .search-icon:hover {
+  color: #555;
+}
+
+/* Media Query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .input-box {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .input-box form {
+    width: 100%;
+  }
+}
