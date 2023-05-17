@@ -1,70 +1,50 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# University Search App 🔍
 
-## Available Scripts
+The University Search App is a React application that allows users to search for universities and view campus photos. It utilizes the "http://universities.hipolabs.com" API to fetch university data and the Unsplash API to retrieve random campus photos.
 
-In the project directory, you can run:
+## Features ✨
 
-### `npm start`
+- Search for universities by country
+- View a list of universities with their details
+- Display a random campus photo for each university
+- Responsive design for optimal viewing on different devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites 🗈
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before running the project, ensure that you have the following installed:
 
-### `npm test`
+- Node.js (version 12 or above)
+- npm (Node Package Manager)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started 🚀
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/GSG-G13/farah-abeer-week10.git
+Navigate to the project directory:
+Install the dependencies:``` npm install```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Obtain an API key from Unsplash by signing up for an account at https://unsplash.com/developers. Once you have the API key, replace the placeholder value in the Photo.js component with your actual API key:
 
-### `npm run eject`
+``` javascript
+// Replace 'YOUR_UNSPLASH_API_KEY' with your actual API key
+`https://api.unsplash.com/photos/random?query=campus,${country}&client_id=YOUR_UNSPLASH_API_KEY`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the development server: ``` npm start ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Open your browser and navigate to http://localhost:3000  to view the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage ❓
+Enter a country name in the search bar to fetch universities from that country.
+The list of universities will be displayed, along with a random campus photo for each university.
+Contributing
+Contributions to the University Search App are welcome! If you find any issues or have suggestions for improvements, please submit a pull request or open an issue on the GitHub repository.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Developers 👩‍💻
+- Farah Alhalimi
+- Abeer Ayyad

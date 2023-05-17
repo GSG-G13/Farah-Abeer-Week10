@@ -1,6 +1,6 @@
 import React from 'react';
 import UniList from './UniList';
-import Photo from './Photo';
+
 import SearchBar from './SearchBar';
 
 class ParentComponent extends React.Component {
